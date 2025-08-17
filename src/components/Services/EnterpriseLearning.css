@@ -1,0 +1,112 @@
+/* Main Container */
+.enterprise-wrapper {
+  width: 100%;
+  background: #020024;
+   background: linear-gradient(90deg, rgb(16, 16, 16) 100%, rgb(3, 3, 16) 100%, rgba(0, 212, 255, 1) 100%);
+  overflow: hidden;
+  color: white;
+
+}
+.wrapper-contenter-box{
+  margin-top: 8rem;
+}
+
+/* Header Section */
+.enterprise-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.enterprise-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: aqua;
+}
+
+.enterprise-header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form-section h3 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #333;
+  background-color: #111;
+  color: white;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #0db3b0b5;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0efdcd9e;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .enterprise-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-section {
+    padding: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .btn-submit {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+
+
+
+
+
+

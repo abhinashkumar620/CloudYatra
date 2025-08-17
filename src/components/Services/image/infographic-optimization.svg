@@ -1,0 +1,85 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Redesigned Optimization Icon
+    - Concept: A dynamic performance gauge symbolizing a boost in speed and efficiency.
+    - Features:
+      - A single, strong visual metaphor (a speedometer) instead of a cluttered dashboard.
+      - A new, vibrant color gradient (blue to magenta) to represent increased performance.
+      - Zero text/element overlap for a clean, professional layout.
+      - A clear, satisfying animation showing the needle sweeping from low to high.
+  -->
+  <defs>
+    <!-- Dark, professional background gradient -->
+    <linearGradient id="optBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" /> <!-- Gray-800 -->
+      <stop offset="100%" stop-color="#111827" /> <!-- Gray-900 -->
+    </linearGradient>
+
+    <!-- New vibrant gradient for the performance gauge -->
+    <linearGradient id="performanceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />   <!-- Sky-400 -->
+      <stop offset="50%" stop-color="#a855f7" />   <!-- Purple-500 -->
+      <stop offset="100%" stop-color="#ec4899" />  <!-- Pink-500 -->
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="120" height="120" rx="20" fill="url(#optBgGradient)" />
+
+  <!-- Main Gauge Arc -->
+  <path d="M 30 75 A 40 40 0 0 1 90 75" 
+        fill="none" 
+        stroke="url(#performanceGradient)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+
+  <!-- Gauge Ticks (for detail) -->
+  <path d="M 30 75 L 33 70 M 90 75 L 87 70 M 60 35 L 60 39" 
+        stroke="#4b5563" 
+        stroke-width="2.5" 
+        stroke-linecap="round" />
+        
+  <!-- Animated Needle -->
+  <g>
+    <path d="M 60 75 L 60 45" 
+          stroke="white" 
+          stroke-width="3" 
+          stroke-linecap="round">
+      <animateTransform 
+          attributeName="transform" 
+          type="rotate"
+          values="-50 60 75; 50 60 75; 50 60 75; -50 60 75"
+          keyTimes="0; 0.4; 0.8; 1"
+          dur="3.5s" 
+          repeatCount="indefinite" />
+    </path>
+    <!-- Pivot point of the needle -->
+    <circle cx="60" cy="75" r="5" fill="white"/>
+  </g>
+
+  <!-- Small animating bar chart inside the gauge for extra flair -->
+  <g transform="translate(48, 60)">
+      <rect x="0" y="10" width="4" height="5" rx="1" fill="#4b5563">
+         <animate attributeName="height" values="5; 10; 5" dur="3.5s" repeatCount="indefinite" />
+         <animate attributeName="y" values="10; 5; 10" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="8" y="5" width="4" height="10" rx="1" fill="#6b7280">
+         <animate attributeName="height" values="10; 15; 10" dur="3.5s" repeatCount="indefinite" />
+         <animate attributeName="y" values="5; 0; 5" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="16" y="0" width="4" height="15" rx="1" fill="#9ca3af">
+         <animate attributeName="height" values="15; 20; 15" dur="3.5s" repeatCount="indefinite" />
+         <animate attributeName="y" values="0; -5; 0" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+  </g>
+  
+  <!-- Main Text Label -->
+  <text x="60" y="105" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" 
+        font-weight="600" 
+        fill="#9ca3af" 
+        text-anchor="middle">
+    OPTIMIZE
+  </text>
+</svg>

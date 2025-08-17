@@ -1,0 +1,99 @@
+.main-section {
+  /* width: 100vw; */
+    background: #020024;
+  background: linear-gradient(90deg, rgb(16, 16, 16) 100%, rgb(3, 3, 16) 100%, rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+}
+
+.hero-section {
+  width: 60%;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+   margin-top: 7rem;
+}
+
+.hero-section h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Features-section {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Features-section h2 {
+  border: 1px solid rgba(81, 78, 78, 0.664);
+  padding: 2.3px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.Features-section:hover {
+  background-color: rgba(0, 0, 0, 0.305);
+  color: rgba(255, 255, 255, 0.693);
+}
+
+/* -------------------- */
+/* ✅ Mobile Responsiveness */
+/* -------------------- */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    width: 90%;
+    gap: 1.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .Features-section {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .Features-section h2 {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+  }
+
+  .Features-section h2 {
+    font-size: 0.9rem;
+  }
+}

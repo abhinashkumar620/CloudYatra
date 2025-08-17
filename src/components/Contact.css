@@ -1,0 +1,108 @@
+/* Wrapper for center alignment */
+.contact-page-wrapper {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  width: 100%;
+  background: #020024;
+   background: linear-gradient(90deg, rgb(16, 16, 16) 100%, rgb(3, 3, 16) 100%, rgba(0, 212, 255, 1) 100%);
+  overflow: hidden;
+  color: white;
+}
+
+/* Form box */
+.form-contact-page {
+    width: 100%;
+    max-width: 600px;
+    /* background: #46444495; */
+    border: 1px solid rgb(0, 255, 229);
+    padding: 2rem;
+    /* color: white; */
+    border-radius: 10px;
+     margin-top: 7rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.64);
+}
+
+.form-contact-page h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #f2efef;
+}
+
+/* Form input layout */
+.form-contact-page form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-contact-page label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f4ebeb;
+}
+
+.form-contact-page input,
+.form-contact-page select,
+.form-contact-page textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-contact-page input:focus,
+.form-contact-page select:focus,
+.form-contact-page textarea:focus {
+  border-color: #20d047;
+  outline: none;
+}
+
+.form-contact-page textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button style */
+.form-submit-button {
+  margin-top: 1rem;
+  background-color: #00ddff;
+  color: #040404f8;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit-button:hover {
+ background-color: hsl(193, 100%, 50%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-contact-page {
+    padding: 1.5rem;
+  }
+
+  .form-submit-button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-contact-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-contact-page input,
+  .form-contact-page select,
+  .form-contact-page textarea {
+    font-size: 0.95rem;
+  }
+}

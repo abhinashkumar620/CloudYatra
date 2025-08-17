@@ -1,0 +1,153 @@
+/* Base Navbar Styles */
+.navbar {
+  width: 100vw;
+  background: #1a1a1b;
+  background: linear-gradient(318deg, rgba(120, 121, 128, 0.993) 0%, rgba(45, 43, 40, 0.927) 98%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.948);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  width: 94vw;
+  margin: auto;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.Services-p{
+    cursor: pointer;
+    color: white;
+  
+}
+.dropdown-menu::-webkit-scrollbar{
+    display: none;
+}
+
+/* Navigation Links */
+.link-content {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.link-content li {
+  position: relative;
+}
+
+.link-content a {
+  text-decoration: none;
+  color: #f0e9e9;
+  
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(10, 10, 10, 0.952);
+  border-radius: 10px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 200px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+.dropdown-menu li{
+  padding: 8px 10px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+.dropdown-menu li a {
+  color: #faf4f4;
+  /* padding: 0 5rem; */
+  
+
+    /* color: white; */
+}
+
+.btn1, .btn2 {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.btn2 {
+  background-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .link-content {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 10px;
+    background: #0a0a0af4;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .link-content.open {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    padding: 12px 30px;
+    border: none;
+    /* border: 1px solid #ccc; */
+  }
+
+  .btn1, .btn2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .btn1, .btn2{
+    display: none;
+  }
+  .Services-p{
+    cursor: pointer;
+    color: white;
+
+}
+.logo {
+  height: 40px;
+  width: auto;
+}
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+}
+}

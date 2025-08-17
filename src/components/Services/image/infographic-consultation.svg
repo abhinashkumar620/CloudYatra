@@ -1,0 +1,77 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Redesigned Consulting Icon
+    - Concept: A symbolic representation of the dialogue between a client (idea) and a consultant (analysis/solution).
+    - Features:
+      - A strong central metaphor of two interlocking speech bubbles.
+      - Clear visual distinction between client (stable blue) and consultant (vibrant gradient).
+      - Contains symbolic elements: a spark for the idea, a chart for the analysis.
+      - Clean, elegant animation that tells the story of the process.
+      - Zero clutter and a single, clear text label.
+  -->
+  <defs>
+    <!-- Professional dark background -->
+    <linearGradient id="consultBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" /> <!-- Gray-800 -->
+      <stop offset="100%" stop-color="#111827" /> <!-- Gray-900 -->
+    </linearGradient>
+    
+    <!-- Vibrant gradient for the consultant/solution -->
+    <linearGradient id="solutionGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />   <!-- Teal-400 -->
+      <stop offset="100%" stop-color="#34d399" />  <!-- Emerald-400 -->
+    </linearGradient>
+
+    <!-- Stable color for the client/problem -->
+    <linearGradient id="clientGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />   <!-- Blue-500 -->
+      <stop offset="100%" stop-color="#60a5fa" />  <!-- Blue-400 -->
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="120" height="120" rx="20" fill="url(#consultBgGradient)" />
+
+  <!-- Speech Bubble 1 (Client / Idea) -->
+  <g transform="translate(0, -5)">
+    <path d="M 40 30 C 20 30, 15 65, 40 65 L 40 75 L 55 65 C 75 65, 80 30, 60 30 C 50 30, 45 30, 40 30 Z" fill="url(#clientGradient)"/>
+    <!-- Spark/Idea Icon -->
+    <path d="M 50 47.5 L 46 45 L 50 42.5 L 54 45 Z M 50 40 L 50 50 M 45 45 L 55 45" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  
+  <!-- Speech Bubble 2 (Consultant / Solution) -->
+  <g transform="translate(0, 5)">
+    <path d="M 80 80 C 100 80, 105 45, 80 45 L 80 35 L 65 45 C 45 45, 40 80, 60 80 C 70 80, 75 80, 80 80 Z" fill="url(#solutionGradient)"/>
+    <!-- Animated Bar Chart for Analysis -->
+    <g transform="translate(58, 55)">
+      <rect x="0" y="10" width="4" height="10" rx="1" fill="white" opacity="0.8">
+        <animate attributeName="height" values="2; 10; 2" dur="3s" begin="0s" repeatCount="indefinite" />
+        <animate attributeName="y" values="18; 10; 18" dur="3s" begin="0s" repeatCount="indefinite" />
+      </rect>
+      <rect x="8" y="5" width="4" height="15" rx="1" fill="white" opacity="0.8">
+        <animate attributeName="height" values="5; 15; 5" dur="3s" begin="0.3s" repeatCount="indefinite" />
+        <animate attributeName="y" values="15; 5; 15" dur="3s" begin="0.3s" repeatCount="indefinite" />
+      </rect>
+      <rect x="16" y="0" width="4" height="20" rx="1" fill="white" opacity="0.8">
+        <animate attributeName="height" values="8; 20; 8" dur="3s" begin="0.6s" repeatCount="indefinite" />
+        <animate attributeName="y" values="12; 0; 12" dur="3s" begin="0.6s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- Pulse at the intersection to show collaboration -->
+  <circle cx="60" cy="55" r="5" fill="#f0fdf4" opacity="0">
+    <animate attributeName="r" values="0; 8; 0" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0; 0.7; 0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Text Label -->
+  <text x="60" y="105" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="12" 
+        font-weight="600" 
+        fill="#9ca3af" 
+        text-anchor="middle">
+    CONSULTING
+  </text>
+</svg>

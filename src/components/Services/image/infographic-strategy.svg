@@ -1,0 +1,88 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="strategyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="strategyAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Strategic Planning Board -->
+  <rect x="20" y="25" width="80" height="60" rx="8" fill="url(#strategyGradient)" opacity="0.1" stroke="url(#strategyGradient)" stroke-width="2"/>
+  
+  <!-- Strategy Framework -->
+  <g transform="translate(30, 35)">
+    <!-- Central Strategy Hub -->
+    <circle cx="30" cy="25" r="12" fill="url(#strategyAccent)" opacity="0.8"/>
+    <text x="30" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">CORE</text>
+    
+    <!-- Strategy Components -->
+    <circle cx="10" cy="10" r="8" fill="url(#strategyGradient)" opacity="0.7"/>
+    <text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">TECH</text>
+    
+    <circle cx="50" cy="10" r="8" fill="url(#strategyGradient)" opacity="0.7"/>
+    <text x="50" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">SEC</text>
+    
+    <circle cx="10" cy="40" r="8" fill="url(#strategyGradient)" opacity="0.7"/>
+    <text x="10" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">COST</text>
+    
+    <circle cx="50" cy="40" r="8" fill="url(#strategyGradient)" opacity="0.7"/>
+    <text x="50" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">PERF</text>
+    
+    <!-- Connection Lines -->
+    <line x1="18" y1="17" x2="22" y2="21" stroke="url(#strategyAccent)" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0,10;5,5;0,10" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="42" y1="17" x2="38" y2="21" stroke="url(#strategyAccent)" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="5,5;0,10;5,5" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="18" y1="33" x2="22" y2="29" stroke="url(#strategyAccent)" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0,10;5,5;0,10" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="42" y1="33" x2="38" y2="29" stroke="url(#strategyAccent)" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="5,5;0,10;5,5" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Timeline/Roadmap -->
+  <g transform="translate(25, 95)">
+    <line x1="0" y1="0" x2="70" y2="0" stroke="url(#strategyAccent)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="3" fill="url(#strategyAccent)"/>
+    <circle cx="23" cy="0" r="3" fill="url(#strategyGradient)"/>
+    <circle cx="46" cy="0" r="3" fill="url(#strategyGradient)"/>
+    <circle cx="70" cy="0" r="3" fill="url(#strategyAccent)"/>
+    
+    <!-- Timeline Labels -->
+    <text x="0" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="url(#strategyAccent)">Q1</text>
+    <text x="23" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="url(#strategyGradient)">Q2</text>
+    <text x="46" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="url(#strategyGradient)">Q3</text>
+    <text x="70" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="url(#strategyAccent)">Q4</text>
+  </g>
+  
+  <!-- Strategic Goals -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="25" height="8" rx="4" fill="url(#strategyAccent)" opacity="0.8"/>
+    <text x="12.5" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">GOALS</text>
+  </g>
+  
+  <g transform="translate(85, 10)">
+    <rect x="0" y="0" width="25" height="8" rx="4" fill="url(#strategyAccent)" opacity="0.8"/>
+    <text x="12.5" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">KPIs</text>
+  </g>
+  
+  <!-- Strategy Flow Indicators -->
+  <path d="M 15 50 Q 60 20 105 50" stroke="url(#strategyAccent)" stroke-width="2" fill="none" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,50;25,25;0,50" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Innovation Sparks -->
+  <circle cx="15" cy="105" r="2" fill="url(#strategyAccent)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="105" cy="15" r="2" fill="url(#strategyAccent)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

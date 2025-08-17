@@ -1,0 +1,66 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ciscoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1BA0D7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E7DB8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ciscoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#323232;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E1E1E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="5" y="5" width="190" height="90" rx="15" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Cisco Logo Bridge -->
+  <g transform="translate(15, 25)">
+    <!-- Golden Gate Bridge Style Logo -->
+    <rect x="0" y="15" width="50" height="3" fill="url(#ciscoBlue)"/>
+
+    <!-- Bridge Towers -->
+    <rect x="8" y="5" width="2" height="15" fill="url(#ciscoBlue)"/>
+    <rect x="18" y="5" width="2" height="15" fill="url(#ciscoBlue)"/>
+    <rect x="28" y="5" width="2" height="15" fill="url(#ciscoBlue)"/>
+    <rect x="38" y="5" width="2" height="15" fill="url(#ciscoBlue)"/>
+
+    <!-- Bridge Cables -->
+    <path d="M 9 5 Q 14 8 19 5" stroke="url(#ciscoBlue)" stroke-width="1" fill="none"/>
+    <path d="M 19 5 Q 24 8 29 5" stroke="url(#ciscoBlue)" stroke-width="1" fill="none"/>
+    <path d="M 29 5 Q 34 8 39 5" stroke="url(#ciscoBlue)" stroke-width="1" fill="none"/>
+
+    <!-- Support Cables -->
+    <line x1="9" y1="8" x2="9" y2="15" stroke="url(#ciscoBlue)" stroke-width="0.5"/>
+    <line x1="19" y1="8" x2="19" y2="15" stroke="url(#ciscoBlue)" stroke-width="0.5"/>
+    <line x1="29" y1="8" x2="29" y2="15" stroke="url(#ciscoBlue)" stroke-width="0.5"/>
+    <line x1="39" y1="8" x2="39" y2="15" stroke="url(#ciscoBlue)" stroke-width="0.5"/>
+  </g>
+
+  <!-- Cisco Text -->
+  <text x="70" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#ciscoDark)">cisco</text>
+
+  <!-- Partner Badge -->
+  <g transform="translate(140, 15)">
+    <rect x="0" y="0" width="50" height="25" rx="12" fill="url(#ciscoBlue)"/>
+    <text x="25" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PARTNER</text>
+  </g>
+
+  <!-- Plus Level Badge -->
+  <g transform="translate(140, 45)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="url(#ciscoDark)"/>
+    <text x="25" y="13" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">PLUS</text>
+  </g>
+
+  <!-- Network Certification -->
+  <g transform="translate(15, 65)">
+    <circle cx="6" cy="6" r="6" fill="url(#ciscoBlue)"/>
+    <text x="6" y="9" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">N</text>
+    <text x="20" y="9" font-family="Arial, sans-serif" font-size="7.5" fill="#6B7280">Network Certified</text>
+  </g>
+
+  <!-- Cisco Partner Program -->
+  <text x="15" y="82" font-family="Arial, sans-serif" font-size="7" fill="#6B7280">Cisco Partner Program</text>
+
+  <!-- Specializations -->
+  <text x="15" y="92" font-family="Arial, sans-serif" font-size="7" fill="#6B7280">Networking • Security • Collaboration</text>
+</svg>

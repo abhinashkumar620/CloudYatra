@@ -1,0 +1,55 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="awsOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E88B00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="awsDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#232F3E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161E2D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="5" y="5" width="190" height="90" rx="15" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- AWS Logo -->
+  <g transform="translate(15, 20)">
+    <!-- AWS Smile -->
+    <path d="M 5 25 Q 25 35 45 25" stroke="url(#awsOrange)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Arrow pointing up -->
+    <path d="M 40 20 L 45 25 L 40 30" stroke="url(#awsOrange)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- AWS Cloud Services Icons -->
+    <rect x="8" y="8" width="8" height="8" rx="2" fill="url(#awsOrange)" opacity="0.8"/>
+    <rect x="20" y="8" width="8" height="8" rx="2" fill="url(#awsOrange)" opacity="0.6"/>
+    <rect x="32" y="8" width="8" height="8" rx="2" fill="url(#awsOrange)" opacity="0.8"/>
+
+    <!-- Connection lines -->
+    <line x1="12" y1="16" x2="12" y2="22" stroke="url(#awsOrange)" stroke-width="1"/>
+    <line x1="24" y1="16" x2="24" y2="22" stroke="url(#awsOrange)" stroke-width="1"/>
+    <line x1="36" y1="16" x2="36" y2="22" stroke="url(#awsOrange)" stroke-width="1"/>
+  </g>
+
+  <!-- AWS Text -->
+  <text x="80" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#awsDark)">AWS</text>
+
+  <!-- Partner Badge -->
+  <g transform="translate(140, 15)">
+    <rect x="0" y="0" width="50" height="25" rx="12" fill="url(#awsOrange)"/>
+    <text x="25" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PARTNER</text>
+  </g>
+
+  <!-- Certified Level Badge -->
+  <g transform="translate(140, 45)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="url(#awsDark)"/>
+    <text x="25" y="13" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">CERTIFIED</text>
+  </g>
+
+  <!-- AWS Partner Network -->
+  <text x="80" y="75" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">AWS Partner Network</text>
+
+  <!-- Services -->
+  <text x="80" y="85" font-family="Arial, sans-serif" font-size="8" fill="#6B7280">EC2 • S3 • Lambda • RDS</text>
+</svg>

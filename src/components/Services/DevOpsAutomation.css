@@ -1,0 +1,164 @@
+.main-contener-dev{
+  width: 100vw;
+  /* height: 100vh; */
+   background: #020024;
+   background: linear-gradient(90deg, rgb(16, 16, 16) 100%, rgb(3, 3, 16) 100%, rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+
+}
+.dev-content{
+  width: 60%;
+  /* background-color: aqua; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+ margin-top: 7rem;
+}
+.dev-content h3{
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dev-content p{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ........./////////// */
+
+.dev-box-contener {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.dev-box-contener h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #f6f5f5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box-content {
+  flex: 1 1 calc(25% - 20px); /* 4 per row */
+  background-color: #1a1a1af0;
+  border: 1px solid rgb(17, 206, 220);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.box-content:hover {
+  transform: translateY(-5px);
+}
+
+.box-content img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 992px) {
+  .box-content {
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+  }
+  .dev-content{
+    /* font-size: 1rem; */
+    width: 90%;
+  }
+  .dev-content h3{
+  font-size: 2rem;
+  }
+  .dev-content p{
+  font-size: 1rem;
+  }
+
+  .About-DevOps{
+    width: 90%;
+  }
+  .About-DevOps h3{
+     font-size:1.3rem;
+  }
+   .About-DevOps p{
+   font-size: 1rem;
+   margin-bottom: 2rem;
+  }
+  .dev-box-contener h3{
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+  .box-content {
+    flex: 1 1 100%; /* 1 per row */
+  }
+  .About-DevOps{
+    width: 90%;
+  }
+   .dev-content{
+    /* font-size: 1rem; */
+    width: 90%;
+  }
+  .dev-content h3{
+  font-size: 2rem;
+  }
+  .dev-content p{
+  font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.About-DevOps{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.About-DevOps h2{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}

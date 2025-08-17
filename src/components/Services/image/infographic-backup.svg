@@ -1,0 +1,80 @@
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="backupGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="cloudGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+
+  <!-- Primary Server -->
+  <rect x="30" y="60" width="25" height="40" rx="3" fill="url(#serverGradient)"/>
+  <rect x="32" y="65" width="21" height="3" rx="1" fill="#10B981"/>
+  <rect x="32" y="70" width="21" height="3" rx="1" fill="#6B7280"/>
+  <rect x="32" y="75" width="21" height="3" rx="1" fill="#10B981"/>
+  <rect x="32" y="80" width="21" height="3" rx="1" fill="#6B7280"/>
+  <rect x="32" y="85" width="21" height="3" rx="1" fill="#10B981"/>
+  <rect x="32" y="90" width="21" height="3" rx="1" fill="#6B7280"/>
+
+  <!-- Data Flow to Cloud -->
+  <path d="M 55 80 Q 90 70 125 80" stroke="url(#backupGradient)" stroke-width="3" fill="none" opacity="0.8">
+    <animate attributeName="stroke-dasharray" values="0,50;25,25;0,50" dur="3s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Cloud Storage -->
+  <ellipse cx="140" cy="70" rx="35" ry="15" fill="url(#cloudGradient)"/>
+  <ellipse cx="120" cy="60" rx="20" ry="8" fill="url(#cloudGradient)"/>
+  <ellipse cx="160" cy="60" rx="20" ry="8" fill="url(#cloudGradient)"/>
+  <ellipse cx="140" cy="55" rx="15" ry="6" fill="url(#cloudGradient)"/>
+
+  <!-- Backup Indicators in Cloud -->
+  <circle cx="130" cy="65" r="2" fill="#FFFFFF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="68" r="2" fill="#FFFFFF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="65" r="2" fill="#FFFFFF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Recovery Arrow -->
+  <path d="M 125 90 Q 90 100 55 90" stroke="url(#backupGradient)" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dasharray" values="5,5;10,0;5,5" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Recovery Server -->
+  <rect x="30" y="110" width="25" height="25" rx="3" fill="url(#backupGradient)" opacity="0.7"/>
+  <text x="42.5" y="125" text-anchor="middle" fill="white" font-size="8" font-weight="bold">REC</text>
+
+  <!-- Backup Schedule Indicators -->
+  <rect x="70" y="30" width="60" height="20" rx="5" fill="url(#serverGradient)" opacity="0.2"/>
+  <text x="100" y="42" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="bold">24/7 Backup</text>
+
+  <!-- Time Indicators -->
+  <circle cx="20" cy="40" r="8" fill="none" stroke="url(#backupGradient)" stroke-width="2"/>
+  <line x1="20" y1="35" x2="20" y2="40" stroke="url(#backupGradient)" stroke-width="2"/>
+  <line x1="20" y1="40" x2="23" y2="43" stroke="url(#backupGradient)" stroke-width="2"/>
+
+  <!-- Security Shield -->
+  <path d="M 170 100 L 185 110 L 185 130 Q 185 140 170 145 Q 155 140 155 130 L 155 110 Z"
+        fill="url(#backupGradient)" opacity="0.8"/>
+  <path d="M 170 105 L 180 112 L 180 128 Q 180 135 170 138 Q 160 135 160 128 L 160 112 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="170" cy="125" r="3" fill="#FFFFFF"/>
+
+  <!-- Data Integrity Lines -->
+  <line x1="10" y1="120" x2="25" y2="120" stroke="#10B981" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="175" y1="120" x2="190" y2="120" stroke="#10B981" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </line>
+</svg>

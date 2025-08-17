@@ -1,0 +1,48 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="azureBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#005A9E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="azureLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#40E0D0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="5" y="5" width="190" height="90" rx="15" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Microsoft Azure Logo -->
+  <g transform="translate(15, 20)">
+    <!-- Azure Symbol -->
+    <path d="M 0 25 L 15 0 L 35 0 L 20 25 L 40 25 L 25 50 L 5 50 Z" fill="url(#azureBlue)"/>
+    <path d="M 15 0 L 35 0 L 25 15 L 20 25 L 40 25 L 30 40 L 10 40 Z" fill="url(#azureLight)" opacity="0.8"/>
+  </g>
+
+  <!-- Microsoft Text -->
+  <text x="70" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#323130">Microsoft</text>
+
+  <!-- Azure Text -->
+  <text x="70" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="url(#azureBlue)">Azure</text>
+
+  <!-- Partner Badge -->
+  <g transform="translate(140, 15)">
+    <rect x="0" y="0" width="50" height="25" rx="12" fill="url(#azureBlue)"/>
+    <text x="25" y="16" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PARTNER</text>
+  </g>
+
+  <!-- Gold Level Badge -->
+  <g transform="translate(140, 45)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="#FFD700"/>
+    <text x="25" y="13" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="bold" fill="#323130">GOLD</text>
+  </g>
+
+  <!-- Certification Mark -->
+  <circle cx="25" cy="80" r="8" fill="url(#azureBlue)"/>
+  <text x="25" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">✓</text>
+  <text x="40" y="84" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Certified</text>
+
+  <!-- Microsoft Partner Network -->
+  <text x="70" y="84" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Microsoft Partner Network</text>
+</svg>

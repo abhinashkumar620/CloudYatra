@@ -1,0 +1,206 @@
+.Resource-section {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(16, 16, 16) 100%,
+    rgb(3, 3, 16) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-content-de {
+  width: 70%;
+  margin: 7rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.main-content-de h2 {
+  color: aqua !important;
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.main-content-de p {
+  color: white !important;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ✅ Checklist Box */
+.Checklist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  width: 70vw;
+  margin-top: 30px;
+  padding: 3rem;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Checklist:hover {
+  transform: translateY(-10px); /* upar uth jaye */
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.Checklist img {
+  width: 300px;
+}
+
+.contener-chec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inpt-btn form {
+  display: flex;
+  gap: 1rem;
+}
+
+form input {
+  border: 1px solid rgb(90, 92, 90);
+}
+
+form button {
+  border: 1px solid wheat;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: aliceblue;
+  color: #020024;
+}
+
+/* ✅ Latest Resources Section */
+.Latest-Resources-section {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.Latest-box {
+  background: #1f2937;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Latest-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.Latest-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Latest-box button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.4);
+}
+
+.Latest-box button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 114, 255, 0.6);
+}
+
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .main-content-de {
+    width: 90%;
+  }
+
+  .Checklist {
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+    padding: 2rem;
+  }
+
+  .Checklist img {
+    width: 200px;
+    margin-bottom: 1.5rem;
+  }
+
+  .Latest-Resources-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content-de h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-content-de p {
+    font-size: 1rem;
+  }
+
+  .Checklist {
+    flex-direction: column;
+    width: 95vw;
+    padding: 1.5rem;
+  }
+
+  .Checklist img {
+    width: 150px;
+  }
+
+  .Latest-Resources-section {
+    grid-template-columns: 1fr;
+  }
+
+  .Latest-box img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Latest-box h4 {
+    font-size: 1.1rem;
+  }
+
+  .Latest-box p {
+    font-size: 0.9rem;
+  }
+}

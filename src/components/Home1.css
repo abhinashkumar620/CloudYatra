@@ -1,0 +1,188 @@
+/* General Container */
+.home-contener-box {
+  width: 100%;
+  background-color: #0f1c2e;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+/* HERO SECTION */
+.hero {
+  padding: 3rem 1rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-left span {
+  color: #3fc1ff;
+}
+
+.hero-left p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3fc1ff;
+  color: #000;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #3fc1ff;
+  color: #3fc1ff;
+}
+
+/* HERO IMAGE */
+.hero-right img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* CLOUD TECH SECTION */
+.cloud-tech {
+  background: linear-gradient(135deg, #1b3061, #0f1c2e);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cloud-tech-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+
+.cloud-tech-left img {
+  width: 280px;
+  max-width: 100%;
+}
+
+.cloud-tech-right {
+  max-width: 500px;
+}
+
+.cloud-tech-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-tech-right p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.learn-more {
+  padding: 0.8rem 1.5rem;
+  background-color: #3fc1ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: #2da4e0;
+}
+
+/* HERO STATS */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.stat-box {
+  background-color: #ffffff12;
+  border: 1px solid #3f3f3f;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 100px;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+.stat-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box i {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .cloud-tech-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-stats {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .stat-box {
+    min-width: 160px;
+  }
+}
